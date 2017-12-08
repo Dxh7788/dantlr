@@ -1,5 +1,8 @@
 
 
+/**
+
+*/
 grammar Dql;
 binding : suffix id  midl endexpr;
 suffix: 'select'|'insert';
