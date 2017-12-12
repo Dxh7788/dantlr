@@ -14,7 +14,7 @@ import org.dantlr.gner.expr.ext.MyExprBaseVistor;
 public class ExprTest {
 
     public static void main(String[] args) {
-        ANTLRInputStream inputStream = new ANTLRInputStream("1+2+3*4+6/2");
+        ANTLRInputStream inputStream = new ANTLRInputStream("1 + 2 + 3 * 4 + 6 / 2");
         ExprLexer lexer = new ExprLexer(inputStream);
 
         CommonTokenStream tokenStream = new CommonTokenStream(lexer);
