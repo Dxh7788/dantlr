@@ -82,7 +82,6 @@ public class HelloLexer extends Lexer {
 	@Override
 	public String getSerializedATN() { return _serializedATN; }
 
-	@Override
 	public String[] getChannelNames() { return channelNames; }
 
 	@Override

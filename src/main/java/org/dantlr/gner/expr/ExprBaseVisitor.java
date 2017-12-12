@@ -17,61 +17,61 @@ public class ExprBaseVisitor<T> extends AbstractParseTreeVisitor<T> implements E
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	public T visitProg(ExprParser.ProgContext ctx) { return visitChildren(ctx); }
+	@Override public T visitProg(ExprParser.ProgContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	public T visitPrintExpr(ExprParser.PrintExprContext ctx) { return visitChildren(ctx); }
+	@Override public T visitPrintExpr(ExprParser.PrintExprContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	 public T visitAssign(ExprParser.AssignContext ctx) { return visitChildren(ctx); }
+	@Override public T visitAssign(ExprParser.AssignContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	public T visitBlank(ExprParser.BlankContext ctx) { return visitChildren(ctx); }
+	@Override public T visitBlank(ExprParser.BlankContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	public T visitParens(ExprParser.ParensContext ctx) { return visitChildren(ctx); }
+	@Override public T visitParens(ExprParser.ParensContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	public T visitMulDiv(ExprParser.MulDivContext ctx) { return visitChildren(ctx); }
+	@Override public T visitMulDiv(ExprParser.MulDivContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	public T visitAddSub(ExprParser.AddSubContext ctx) { return visitChildren(ctx); }
+	@Override public T visitAddSub(ExprParser.AddSubContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	public T visitId(ExprParser.IdContext ctx) { return visitChildren(ctx); }
+	@Override public T visitId(ExprParser.IdContext ctx) { return visitChildren(ctx); }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
-	public T visitInt(ExprParser.IntContext ctx) { return visitChildren(ctx); }
+	@Override public T visitInt(ExprParser.IntContext ctx) { return visitChildren(ctx); }
 }
