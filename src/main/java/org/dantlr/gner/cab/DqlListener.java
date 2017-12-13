@@ -17,44 +17,4 @@ public interface DqlListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitBinding(DqlParser.BindingContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link DqlParser#suffix}.
-	 * @param ctx the parse tree
-	 */
-	void enterSuffix(DqlParser.SuffixContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link DqlParser#suffix}.
-	 * @param ctx the parse tree
-	 */
-	void exitSuffix(DqlParser.SuffixContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link DqlParser#id}.
-	 * @param ctx the parse tree
-	 */
-	void enterId(DqlParser.IdContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link DqlParser#id}.
-	 * @param ctx the parse tree
-	 */
-	void exitId(DqlParser.IdContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link DqlParser#midl}.
-	 * @param ctx the parse tree
-	 */
-	void enterMidl(DqlParser.MidlContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link DqlParser#midl}.
-	 * @param ctx the parse tree
-	 */
-	void exitMidl(DqlParser.MidlContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link DqlParser#endexpr}.
-	 * @param ctx the parse tree
-	 */
-	void enterEndexpr(DqlParser.EndexprContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link DqlParser#endexpr}.
-	 * @param ctx the parse tree
-	 */
-	void exitEndexpr(DqlParser.EndexprContext ctx);
 }

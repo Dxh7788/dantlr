@@ -1,8 +1,5 @@
-T__0=1
-T__1=2
-T__2=3
-T__3=4
-'select'=1
-'insert'=2
-'[a-z]+'=3
-'from'=4
+Suffix=1
+Id=2
+Midl=3
+Endexpr=4
+'from'=3
