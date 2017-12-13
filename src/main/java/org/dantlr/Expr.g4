@@ -2,9 +2,9 @@ grammar Expr;
 
 prog : stat+;
 
-stat: expr NEWLINE          # printExpr
-    | ID '=' expr NEWLINE   # assign
-    | NEWLINE               # blank
+stat: expr NEWLINE EOF         # printExpr
+    | ID '=' expr NEWLINE EOF  # assign
+    | NEWLINE EOF              # blank
     ;
 
 expr: expr op=('*'|'/') expr    # MulDiv
